@@ -1,4 +1,4 @@
-# chromecast-osx-audio v0.0.1
+# chromecast-osx-audio v0.0.2
 
 Streams Mac OS X audio input to a local Chromecast device.
 
@@ -14,21 +14,23 @@ npm install -g chromecast-osx-audio
 
 ## Usage
 
-Pipe input to a writeable file stream:
+Global installation exposes the `chromecast` command to your shell. Running this command will start listening to input, and connect to a local Chromecast with a stream of that input.
 
-```js
-var fs = require('fs');
-var audio = require('osx-audio');
+To direct system audio, use [Soundflower](http://rogueamoeba.com/freebies/soundflower/).
 
-var input = audio.createReadStream();
+```bash
+$ chromecast --help
 
-var writable = fs.createWriteStream('output.txt');
-input.pipe(writable);
+Usage: chromecast [options]
+
+Options:
+   -p, --port        The port that the streaming server will listen on.  [3000]
+   -b, --bitrate     The bitrate for the mp3 encoded stream.  [192]
+   -m, --mono        The stream defaults to stereo. Set to mono with this flag.
+   -s, --samplerate  The sample rate for the mp3 encoded stream  [44100]
+   -n, --name        A name for the server to report itself as.  [Chrome OSX Audio Stream]
+   --version         print version and exit
 ```
-
-### Options
-
-None yet.
 
 ## Environment Variables
 
@@ -46,6 +48,9 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 2. Be sure to point out any changes that break API.
 
 ## History
+
+- **v0.0.2**  
+Readme was all wrong. Republished.
 
 - **v0.0.1**  
 Initial Release.
