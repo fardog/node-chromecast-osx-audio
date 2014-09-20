@@ -2,6 +2,8 @@
 
 Streams Mac OS X audio input to a local Chromecast device.
 
+**Note:** This is a very quickly-written first implementation. Consider it a tech-demo more than anything!
+
 ## Installation
 
 To install the module for use in your projects:
