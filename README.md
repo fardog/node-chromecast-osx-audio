@@ -1,4 +1,4 @@
-# chromecast-osx-audio v0.0.2
+# chromecast-osx-audio v0.0.3
 
 Streams Mac OS X audio input to a local Chromecast device.
 
@@ -48,6 +48,9 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 2. Be sure to point out any changes that break API.
 
 ## History
+
+- **v0.0.3**  
+Updates to latest version of osx-audio.
 
 - **v0.0.2**  
 Readme was all wrong. Republished.

@@ -28,7 +28,7 @@ var Chromecast = function(options) {
     mode: (options.mono ? lame.MONO : lame.STEREO) // STEREO (default), JOINTSTEREO, DUALCHANNEL or MONO
   });
 
-  var input = audio.createReadStream();
+  var input = new audio.Input();
   input.pipe(encoder);
 
   // set up an express app
