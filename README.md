@@ -1,8 +1,6 @@
-# chromecast-osx-audio v0.0.3
+# chromecast-osx-audio v0.1.0
 
 Streams Mac OS X audio input to a local Chromecast device.
-
-**Note:** This is a very quickly-written first implementation. Consider it a tech-demo more than anything!
 
 ## Installation
 
@@ -29,6 +27,8 @@ Options:
    -m, --mono        The stream defaults to stereo. Set to mono with this flag.
    -s, --samplerate  The sample rate for the mp3 encoded stream  [44100]
    -n, --name        A name for the server to report itself as.  [Chrome OSX Audio Stream]
+   -u, --url         The relative URL that the stream will be hosted at.  [stream.mp3]
+   -i, --iface       The public interface that should be reported. Selects the first interface by default.
    --version         print version and exit
 ```
 
@@ -38,7 +38,7 @@ None yet.
 
 ## Known Issues
 
-Too early to know.
+- Only the first Chromecast found will be streamed to. Future versions will allow you to pick a Chromecast.
 
 ## Contributing
 
@@ -48,6 +48,9 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 2. Be sure to point out any changes that break API.
 
 ## History
+
+- **v0.1.0**  
+Splits webcast functionality to the [webcast-osx-audio](https://github.com/fardog/node-webcast-osx-audio) package.
 
 - **v0.0.3**  
 Updates to latest version of osx-audio.
