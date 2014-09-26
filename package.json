@@ -1,6 +1,6 @@
 {
   "name": "chromecast-osx-audio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Stream OS X audio input to a local Chromecast device.",
   "preferGlobal": true,
   "main": "index.js",
@@ -31,6 +31,6 @@
     "chalk": "^0.5.1",
     "mdns": "^2.2.0",
     "minimist": "^1.1.0",
-		"webcast-osx-audio": "0.1.1"
+		"webcast-osx-audio": "~0.1.2"
   }
 }
