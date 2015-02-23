@@ -47,7 +47,7 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 
 ## History
 
-See (CHANGELOG)[./CHANGELOG.md].
+See [CHANGELOG](./CHANGELOG.md).
 
 ## The MIT License (MIT)
 
