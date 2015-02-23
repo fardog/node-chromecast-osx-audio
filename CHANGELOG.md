@@ -1,7 +1,8 @@
 # Changelog
 
 - **v0.2.0**  
-Adds device listing and ability to specify a device if more than one are found
+Adds device listing and ability to specify a device if more than one are
+found ([@pixelcat](https://github.com/fardog/node-chromecast-osx-audio/pull/2))
 
 - **v0.1.3**  
 Adds simple error handling.
