@@ -29,16 +29,14 @@ Options:
    -n, --name        A name for the server to report itself as.  [Chrome OSX Audio Stream]
    -u, --url         The relative URL that the stream will be hosted at.  [stream.mp3]
    -i, --iface       The public interface that should be reported. Selects the first interface by default.
+   -l, --list        List devices available for streaming.
+   -d, --device      Specify device to use for streaming.
    --version         print version and exit
 ```
 
 ## Environment Variables
 
 None yet.
-
-## Known Issues
-
-- Only the first Chromecast found will be streamed to. Future versions will allow you to pick a Chromecast.
 
 ## Contributing
 
@@ -49,26 +47,7 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 
 ## History
 
-- **v0.1.3**  
-Adds simple error handling.
-
-- **v0.1.2**  
-Updates webcast-osx-audio dependency.
-
-- **v0.1.1**  
-Updates webcast-osx-audio dependency.
-
-- **v0.1.0**  
-Splits webcast functionality to the [webcast-osx-audio](https://github.com/fardog/node-webcast-osx-audio) package.
-
-- **v0.0.3**  
-Updates to latest version of osx-audio.
-
-- **v0.0.2**  
-Readme was all wrong. Republished.
-
-- **v0.0.1**  
-Initial Release.
+See (CHANGELOG)[./CHANGELOG.md].
 
 ## The MIT License (MIT)
 
