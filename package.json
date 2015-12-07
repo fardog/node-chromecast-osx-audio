@@ -30,7 +30,7 @@
     "chromecast"
   ],
   "dependencies": {
-    "castv2-client": "0.0.2",
+    "castv2-client": "1.1.0",
     "chalk": "^0.5.1",
     "mdns": "^2.2.0",
     "minimist": "^1.1.0",
