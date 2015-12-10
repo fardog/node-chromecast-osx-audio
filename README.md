@@ -1,10 +1,12 @@
-# chromecast-osx-audio v0.2.1
+# chromecast-osx-audio
 
 Streams Mac OS X audio input to a local Chromecast device.
 
 **Note:** chromecast-osx-audio depends on packages which only support node
-version [0.10.38](http://nodejs.org/dist/v0.10.38/) or above. This is unlikely
-to change in the near future.
+version [0.10.38](http://nodejs.org/dist/v0.10.38/) or a newer 0.10.x series.
+It **will not** support newer versions such as 0.12 or 4.x. This is unlikely
+to change in the near future, unless another maintainer can take over this
+project.
 
 ## Installation
 
