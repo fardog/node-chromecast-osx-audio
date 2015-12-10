@@ -1,5 +1,9 @@
 # Changelog
 
+- **v0.3.0**  
+Adds ability to output list of devices as JSON (cli flag `-j`); refactors device
+search. Updates castv2-client ([@danjenkins](https://github.com/fardog/node-chromecast-osx-audio/pull/9))
+
 - **v0.2.0**  
 Adds device listing and ability to specify a device if more than one are
 found ([@pixelcat](https://github.com/fardog/node-chromecast-osx-audio/pull/2))
