@@ -1,5 +1,9 @@
 # Changelog
 
+- **v1.0.0**  
+Compatible with the latest versions of Node.js, thanks to a contribution to the
+upstream [osx-audio][] package by [Alexander Kuznetsov][alexkuz].
+
 - **v0.3.0**  
 Adds ability to output list of devices as JSON (cli flag `-j`); refactors device
 search. Updates castv2-client ([@danjenkins](https://github.com/fardog/node-chromecast-osx-audio/pull/9))
@@ -29,3 +33,5 @@ Readme was all wrong. Republished.
 - **v0.0.1**  
 Initial Release.
 
+[osx-audio]: https://www.npmjs.com/package/osx-audio
+[alexkuz]: https://github.com/alexkuz

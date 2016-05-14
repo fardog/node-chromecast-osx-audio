@@ -2,12 +2,6 @@
 
 Streams Mac OS X audio input to a local Chromecast device.
 
-**Note:** chromecast-osx-audio depends on packages which only support node
-version [0.10.38](http://nodejs.org/dist/v0.10.38/) or a newer 0.10.x series.
-It **will not** support newer versions such as 0.12 or 4.x. This is unlikely
-to change in the near future, unless another maintainer can take over this
-project.
-
 ## Installation
 
 To install the module for use in your projects:
@@ -18,9 +12,11 @@ npm install -g chromecast-osx-audio
 
 ## Usage
 
-Global installation exposes the `chromecast` command to your shell. Running this command will start listening to input, and connect to a local Chromecast with a stream of that input.
+Global installation exposes the `chromecast` command to your shell. Running this
+command will start listening to input, and connect to a local Chromecast with a
+stream of that input.
 
-To direct system audio, use [Soundflower](http://rogueamoeba.com/freebies/soundflower/).
+To direct system audio, use [Soundflower][soundflower].
 
 ```bash
 $ chromecast --help
@@ -75,3 +71,5 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[soundflower]: http://rogueamoeba.com/freebies/soundflower/
