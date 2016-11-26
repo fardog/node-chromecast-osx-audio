@@ -1,6 +1,6 @@
 # chromecast-osx-audio
 
-Streams Mac OS X audio input to a local Chromecast device.
+Streams macOS audio input to a local Chromecast device.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Global installation exposes the `chromecast` command to your shell. Running this
 command will start listening to input, and connect to a local Chromecast with a
 stream of that input.
 
-To direct system audio, use [Soundflower][soundflower].
+To direct system audio, use [Soundflower](#soundflower).
 
 ```bash
 $ chromecast --help
@@ -35,6 +35,17 @@ Options:
    -d, --device      Specify device to use for streaming.
    --version         print version and exit
 ```
+
+### Soundflower
+
+To direct system audio requires an additional piece of software. You see, macOS doesn’t provide native methods for accessing system audio (the output of the system mixer) so anything that’s not an input (like the microphone) is inaccessible. However, there’s a open source utility called [Soundflower][soundflower] that solves this for you. If you’re unfamiliar with it, here’s a step by step to get it working:
+
+1. Install Soundflower. Reboot.
+2. Install chromecast-osx-audio globally, with an `npm install -g chromecast-osx-audio`
+3. Open your *System Preferences -> Sound* preference pane, and select “Soundflower (2ch)” as both your input and output.
+4. Run `chromecast` in your terminal. It will find the first-available Chromecast, and stream your system audio to it.
+5. Play your music/audio as normal. There is a 5–15 second delay due to how the Chromecast buffers.
+6. Enjoy
 
 ## Environment Variables
 
