@@ -1,5 +1,8 @@
 # Changelog
 
+- **v1.0.1**  
+README updates and clarifications [@hugovk](https://github.com/hugovk)
+
 - **v1.0.0**  
 Compatible with the latest versions of Node.js, thanks to a contribution to the
 upstream [osx-audio][] package by [Alexander Kuznetsov][alexkuz].
